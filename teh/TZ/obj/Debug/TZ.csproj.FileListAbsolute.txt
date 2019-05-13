@@ -1,7 +1,0 @@
-C:\Users\rasey\Desktop\ТЗ\TZ\bin\Debug\TZ.exe.config
-C:\Users\rasey\Desktop\ТЗ\TZ\bin\Debug\TZ.exe
-C:\Users\rasey\Desktop\ТЗ\TZ\bin\Debug\TZ.pdb
-C:\Users\rasey\Desktop\ТЗ\TZ\obj\Debug\TZ.csprojAssemblyReference.cache
-C:\Users\rasey\Desktop\ТЗ\TZ\obj\Debug\TZ.csproj.CoreCompileInputs.cache
-C:\Users\rasey\Desktop\ТЗ\TZ\obj\Debug\TZ.exe
-C:\Users\rasey\Desktop\ТЗ\TZ\obj\Debug\TZ.pdb

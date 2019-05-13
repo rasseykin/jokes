@@ -14,8 +14,8 @@ namespace TZ
             int count1 = 0;
 
             Console.Write("Введите строку: ");
-            string str = Console.ReadLine();//ввод строки
-            string strUpper = str.ToUpper();//преобразование строки в заглавные буквы
+            string str = Console.ReadLine();
+            string strUpper = str.ToUpper();
 
             Console.Write("Символ: ");
             string symbol = Console.ReadLine();//ввод символа

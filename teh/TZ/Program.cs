@@ -10,8 +10,8 @@ namespace TZ
     {
         static void Main(string[] args)
         {
-            int count = 0;
-            int count1 = 0;
+            int countFound = 0;
+            int countWord = 0;
 
             Console.Write("Введите строку: ");
             string str = Console.ReadLine();
@@ -24,30 +24,30 @@ namespace TZ
             char symbChar = Convert.ToChar(symbolUpper);//перевод символа в тип char
 
             char[] ar = strUpper.ToCharArray();//перевод строки(которая уже преобразована в большие буквы) в массив, где каждый символ строки - элемент массива с типом char
-            SearchSymb(ref count, ref count1, symbChar, ar);
-            Console.WriteLine("Слов, начинающихся с буквы " + symbolUpper + ": " + count);//вывод результата
-            Console.WriteLine("Всего слов в строке: " + count1);
+            SearchSymb(ref countFound, ref countWord, symbChar, ar);
+            Console.WriteLine("Слов, начинающихся с буквы " + symbolUpper + ": " + countFound);//вывод результата
+            Console.WriteLine("Всего слов в строке: " + countWord);
             Console.ReadKey();
         }
 
-        private static void SearchSymb(ref int count, ref int count1, char symbChar, char[] ar)
+        private static void SearchSymb(ref int countFound, ref int countWord, char symbChar, char[] ar)
         {
             if (ar[0] == symbChar)//если первый символ соответвует введенному нами символу, то к общему счётчику прибавляется 1
             {
-                count++;
+                countFound++;
             }
             for (int i = 1; i < ar.Length; i++)//далее уже начиная со второго символа строки(т.е. 1 в программировании) идем по каждому элементу массива
             {
                 if ((ar[i] == symbChar) && ar[i - 1] == ' ')//если элемент массива соответвует нашей букве, и при этом перед ним стоит пробел, значит это отдельное слово, значит к счётчику прибавляется 1
                 {
-                    count++;
+                    countFound++;
                 }
                 if (ar[i] == ' ')
                 {
-                    count1++;
+                    countWord++;
                 }
             }
-            count1++;
+            countWord++;
         }
     }
 }
